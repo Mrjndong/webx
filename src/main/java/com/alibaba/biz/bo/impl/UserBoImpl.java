@@ -18,13 +18,11 @@ public class UserBoImpl implements IUserBo {
 
     @Override
     public int save(User user) {
-        // TODO Auto-generated method stub
         return 0;
     }
 
     @Override
     public int del(User user) {
-        // TODO Auto-generated method stub
         return 0;
     }
 
