@@ -24,8 +24,9 @@
 		<pull-factories:control-tool />
 		<pull-factories:uris-tool />
 
-		<bean-tool id="RockEnv" scope="global"
-			class="com.alibaba.rock.common.Environment" />
+		<!-- <bean-tool id="RockEnv" scope="global"
+			class="com.alibaba.rock.common.Environment" /> -->
+			
 	</services:pull>
 	
 	
@@ -52,8 +53,8 @@
 	<beans:bean id='rpcValidateService'
 		class="com.alibaba.nonda.integration.webx3.validation.ValidateService4WebX3" />
 
-	<beans:bean id="customDateEditorRegistrar"
-		class="com.alibaba.rock.rpc.CustomDateEditorRegistrar" />
+	<!-- <beans:bean id="customDateEditorRegistrar"
+		class="com.alibaba.rock.rpc.CustomDateEditorRegistrar" /> -->
 
 
 	<!-- RPC URL -->
@@ -70,15 +71,17 @@
 		class="com.alibaba.citrus.extension.rpc.impl.RPCServiceHandlerImpl">
 
 		<!-- resultGenerator -->
-		<beans:property name="resultGenerator">
+		<!-- <beans:property name="resultGenerator">
 			<beans:bean class="com.alibaba.rock.rpc.CustomResultGenerator" />
-		</beans:property>
-		<beans:property name="exceptionListeners">
+		</beans:property> -->
+		
+		
+		<!-- <beans:property name="exceptionListeners">
 			<beans:list>
 				<beans:bean
 					class="com.alibaba.rocky.commonservice.listerner.RockyExceptionListener" />
 			</beans:list>
-		</beans:property>
+		</beans:property> -->
 
 		<beans:property name="propertyFilters">
 			<beans:list>
