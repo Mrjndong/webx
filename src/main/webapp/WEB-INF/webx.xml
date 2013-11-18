@@ -47,6 +47,10 @@
 	<!-- bean 引入 -->
 	<beans:import resource="bean.xml"/>
 	
+	<!-- dubbo 引入 -->
+	<beans:import resource="dubbo/dubbo-provider.xml"/>
+	<beans:import resource="dubbo/dubbo-consumer.xml"/>
+	
 	<!-- 综合设置。 -->
 	<services:webx-configuration>
 		<!-- 默认将productionMode设为true，建议在jetty插件中设置-DproductionMode=false。 -->
